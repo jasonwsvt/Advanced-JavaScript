@@ -1,0 +1,51 @@
+/* Styles go here */
+
+/** Styles **/
+
+body {
+	text-align: center;
+	font: inherit;
+	font-size: 1.5em;
+}
+
+div {
+	display: inline-block;
+	text-align: center;
+	width: 280px;
+}
+
+#colors {
+	float: left;
+	overflow: hidden;
+	width: 280px;
+	display: table;
+	text-align: left;
+}
+
+#colors li {
+	display: inline;
+	color: black;
+	cursor: auto;
+	font-size: 30px;
+	line-height: 100px;
+	list-style-position: inside;
+	list-style-type: none;
+	height: 100px;
+	float: left;
+	width: 100px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+}
+
+#colors li.red { background-color: darkred; border-radius: 100% 0 0 0; }
+#colors li.green { background-color: darkgreen; border-radius: 0 100% 0 0; }
+#colors li.blue { background-color: darkblue; border-radius: 0 0 0 100%; }
+#colors li.yellow { background-color: #f5c71a; border-radius: 0 0 100% 0; }
+#colors li.red.on { background-color: red; }
+#colors li.green.on { background-color: green; }
+#colors li.blue.on { background-color: blue; }
+#colors li.yellow.on { background-color: yellow }
+p#start { cursor: pointer; color: blue; }
+p#start:hover { text-decoration: underline; }
+.playing #colors li { cursor: pointer; }
+.game-over #colors li { opacity: .5; }
