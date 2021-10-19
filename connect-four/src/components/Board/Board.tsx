@@ -18,7 +18,7 @@ export default class Board extends React.PureComponent<Props> {
 					onTileClick={onTileClick}
 				/>
 			)
-//			console.log(column, columns, columnsComponents)
+			console.log(column, columns, columnsComponents)
 		}
 
 		return <>{columnsComponents}</>;
