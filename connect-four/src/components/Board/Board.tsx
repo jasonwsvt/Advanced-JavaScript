@@ -1,5 +1,5 @@
 import React from "react";
-import Column from "../Column/Column";
+import Column from "../Column/Column-2";
 import styles from "./Board.module.css";
 import { Props } from "./types";
 
