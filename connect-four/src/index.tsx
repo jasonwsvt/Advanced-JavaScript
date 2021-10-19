@@ -1,7 +1,7 @@
-import './index.css';
+import React from 'react';
 import ReactDOM from 'react-dom';
-//import React from 'react';
 import { App } from './components';
+import './index.css';
 
 const component = <App columns={7} rows={6} />
 

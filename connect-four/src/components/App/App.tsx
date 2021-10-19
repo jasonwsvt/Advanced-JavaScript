@@ -64,16 +64,6 @@ export default class App extends React.PureComponent<Props, State> {
 		return `It's ${playerTurn}'s turn`;
 	}
 
-	getLastEmptyTile(column: number) {
-		const { rows } = this.props;
-		const { chipsPositions } = this.state;
-
-		for (let row = rows - 1; row >= 0; row--) {
-			const tileId = `${row}:${column}`;
-			if (!chipsPositions[tileId]) return tileId;
-		}
-	}
-
 	handleTileClick = (tileId: string) => {
 		const { chipsPositions, playerTurn } = this.state;
 
@@ -98,6 +88,16 @@ export default class App extends React.PureComponent<Props, State> {
 
 		// Save new state
 		this.setState({chipsPositions: newChipsPositions, playerTurn: newPlayerTurn, gameStatus })
+	}
+
+	getLastEmptyTile(column: number) {
+		const { rows } = this.props;
+		const { chipsPositions } = this.state;
+
+		for (let row = rows - 1; row >= 0; row--) {
+			const tileId = `${row}:${column}`;
+			if (!chipsPositions[tileId]) return tileId;
+		}
 	}
 
 	renderBoard() {

@@ -9,7 +9,7 @@ export default class Column extends React.PureComponent<Props> {
 		const tiles = [];
 
 		for (let row = 0; row < rows; row++) {
-			const tileId = `${row}: ${column}`;
+			const tileId = `${row}:${column}`;
 			const chipType = chipsPositions[tileId];
 			tiles.push(
 				<Tile

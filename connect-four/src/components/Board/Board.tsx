@@ -8,7 +8,7 @@ export default class Board extends React.PureComponent<Props> {
 		const { columns, rows, chipsPositions, onTileClick } = this.props;
 		const columnsComponents = [];
 
-		for (let column=0; column < columns; column++) {
+		for (let column = 0; column < columns; column++) {
 			columnsComponents.push(
 				<Column
 					key={column}
@@ -18,6 +18,7 @@ export default class Board extends React.PureComponent<Props> {
 					onTileClick={onTileClick}
 				/>
 			)
+//			console.log(column, columns, columnsComponents)
 		}
 
 		return <>{columnsComponents}</>;
