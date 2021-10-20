@@ -1,5 +1,5 @@
 export interface Props {
-	id: string;
-	chipType?: string;
-	onClick: (id: string) => any;
+  id: string;
+  chipType?: string;
+  onClick: (id: string) => any;
 }
