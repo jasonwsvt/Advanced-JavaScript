@@ -3,9 +3,11 @@ import Board from "../Board/Board";
 
 import { Props, State, ChipsPositions } from "./types";
 import styles from "./App.module.css";
-const audio = require('./sfx.mp3');
-var sfx = new Audio(audio);
 
+const audio1 = require('./backgroundMusic.mp3');
+const audio2 = require('./sfx.mp3');
+var backgroundMusic = new Audio(audio1);
+var sfx = new Audio(audio2);
 export default class App extends React.PureComponent<Props, State> {
   state: State = {
     chipsPositions: {},
@@ -79,10 +81,14 @@ export default class App extends React.PureComponent<Props, State> {
 
   handleTileClick = (tileId: string) => {
     const { chipsPositions, playerTurn } = this.state;
-		if (sfx.currentTime > 0) {
-			sfx.currentTime = 0;
+		if (backgroundMusic.currentTime > 0) {
+			if (sfx.currentTime > 0 && !sfx.ended) {
+				sfx.currentTime = 0;
+			} else {
+				sfx.play();
+			}
 		} else {
-			sfx.play();
+			backgroundMusic.play();
 		}
     // Get the last empty tile of the column
     const column = parseInt(tileId.split(":")[1]);
