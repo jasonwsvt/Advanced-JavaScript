@@ -6,5 +6,5 @@ These are projects written in JavaScript, TypeScript, HTML, and CSS for the Tech
   <li><a href="https://github.com/jasonwsvt/Advanced-JavaScript/tree/main/Rock%20Paper%20Scissors/rockpaperscissors">A Rock Paper Scissors clone</a></li>
   <li><a href="https://github.com/jasonwsvt/Advanced-JavaScript/tree/main/SimonSaysGame">A Simon Says clone</a></li>
   <li><a href="https://github.com/jasonwsvt/Advanced-JavaScript/tree/main/connect-four">A Connect Four clone</a></li>
-  <li><a href="https://github.com/jasonwsvt/Advanced-JavaScript/tree/main/chat">A simple chat app</a></li>
+  <li><a href="https://github.com/jasonwsvt/Advanced-JavaScript/tree/main/chat">A socket.io chat app</a></li>
 </ul>
