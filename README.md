@@ -5,6 +5,6 @@ These are projects written in JavaScript, HTML, and CSS for the Tech Academy Adv
   <li><a href="https://github.com/jasonwsvt/Advanced-JavaScript/tree/main/Mobile-first-Hangman">A Hangman clone</a></li>
   <li><a href="https://github.com/jasonwsvt/Advanced-JavaScript/tree/main/Rock%20Paper%20Scissors/rockpaperscissors">A Rock Paper Scissors clone</a></li>
   <li><a href="https://github.com/jasonwsvt/Advanced-JavaScript/tree/main/SimonSaysGame">A Simon Says clone</a></li>
+  <li><a href="https://github.com/jasonwsvt/Advanced-JavaScript/tree/main/connect-four">A Connect Four clone</a></li>
   <li><a href="https://github.com/jasonwsvt/Advanced-JavaScript/tree/main/chat">A simple chat app</a></li>
-  <li><a href="https://github.com/jasonwsvt/Advanced-JavaScript/tree/main/connect-four">A simple Connect Four clone</a></li>
 </ul>
