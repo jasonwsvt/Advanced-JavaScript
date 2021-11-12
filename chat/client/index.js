@@ -25,11 +25,3 @@ document.addEventListener('DOMContentLoaded', () => {
 	document.getElementById('chat-input').addEventListener('focus', () => { typing = true })
 	document.getElementById('chat-input').addEventListener('blur', () => { typing = false })
 })
-
-document.onkeyup = event => {
-	//user pressed and released enter key
-	if (event.keyCode === 13) {
-		if (!typing) chatInput.focus() //if user isn't yet typing, set focus 
-		else chatInput.blur()          //user sent a message, remove focus
-	}
-}
